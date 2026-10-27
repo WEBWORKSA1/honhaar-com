@@ -1,0 +1,86 @@
+---
+layout: default
+title: "Free Student Tools — CGPA to %, Education Loan EMI, Study Abroad Cost | Honhaar"
+description: "Free calculators for students: CGPA to percentage, education loan EMI with moratorium, study-abroad cost estimator, backward deadline planner and application readiness checklist."
+---
+{%- assign b = site.baseurl -%}
+<section class="page-hero"><div class="wrap">
+<span class="eyebrow">Free tools</span><h1>Student planning tools</h1>
+<p class="lead">Fast, private calculators — everything runs in your browser and nothing you type is sent anywhere.</p>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+<div class="tool-tabs" role="tablist">
+<button class="on" data-tool="t-abroad" role="tab" aria-selected="true">✈️ Study-abroad cost</button>
+<button data-tool="t-emi" role="tab">🏦 Loan EMI</button>
+<button data-tool="t-cgpa" role="tab">🎓 CGPA → %</button>
+<button data-tool="t-plan" role="tab">🗓️ Deadline planner</button>
+<button data-tool="t-ready" role="tab">✅ Readiness check</button>
+</div>
+
+<div class="tool on card" id="t-abroad">
+<div><h2 style="font-size:1.5rem">Study-abroad cost estimator</h2><p style="color:var(--ink2)">Rough first-year-plus totals in Indian rupees for a typical public-university master's. Use it to compare countries, then check exact fees on the university site.</p>
+<div class="field"><label for="a-country">Country</label><select id="a-country"><option>UK</option><option>USA</option><option>Canada</option><option>Germany</option><option>Australia</option><option>Ireland</option><option>France</option><option>Japan</option></select></div>
+<div class="field"><label for="a-style">Living style</label><select id="a-style"><option value="0.85">Frugal (shared housing, cooking)</option><option value="1" selected>Typical student</option><option value="1.3">Comfortable / big city</option></select></div>
+<div class="field"><label for="a-schol">Scholarship covering tuition: <b id="a-schol-v">0%</b></label><input id="a-schol" type="range" min="0" max="100" step="10" value="0" oninput="document.getElementById('a-schol-v').textContent=this.value+'%'"></div>
+<div class="field"><label for="a-fx">Optional: PKR per INR (for a Pakistani-rupee estimate)</label><input id="a-fx" type="number" step="0.01" min="0" placeholder="e.g. 3.3"></div></div>
+<div class="out"><span style="font-size:.9rem;color:var(--mute)">Estimated total programme cost</span><div class="big" id="a-out">—</div><p id="a-pk" style="font-weight:600"></p>
+<div class="kv"><span>Tuition (whole programme)</span><b id="a-t"></b></div><div class="kv"><span>Living costs</span><b id="a-l"></b></div><div class="kv"><span>Visa, flights, insurance</span><b id="a-o"></b></div><div class="kv"><span>Scholarship</span><b id="a-s"></b></div>
+<p style="font-size:.85rem;color:var(--mute);margin-top:12px" id="a-m"></p>
+<p style="font-size:.85rem;color:var(--mute)">Indicative estimates only; fees and exchange rates change every year.</p>
+<a class="btn btn-gold btn-sm" href="{{ b }}/match.html">Find funding for this plan</a></div>
+</div>
+
+<div class="tool card" id="t-emi">
+<div><h2 style="font-size:1.5rem">Education loan EMI calculator</h2><p style="color:var(--ink2)">Most education loans add interest during the course period (the moratorium). This shows what you will really repay.</p>
+<div class="field"><label for="e-amt">Loan amount (₹)</label><input id="e-amt" type="number" value="2000000" min="0" step="50000"></div>
+<div class="row"><div class="field"><label for="e-rate">Interest rate (% per year)</label><input id="e-rate" type="number" value="10.5" step="0.1" min="0"></div>
+<div class="field"><label for="e-yrs">Repayment years</label><input id="e-yrs" type="number" value="10" min="1" max="20"></div></div>
+<div class="field"><label for="e-mor">Moratorium (course + grace), months</label><input id="e-mor" type="number" value="30" min="0" max="72"></div>
+<label class="check"><input type="checkbox" id="e-simple" checked> <span>Simple interest during moratorium (common with Indian public-sector banks)</span></label></div>
+<div class="out"><span style="font-size:.9rem;color:var(--mute)">Your monthly EMI</span><div class="big" id="e-out">—</div>
+<div class="bar"><i id="e-bar"></i></div>
+<div class="kv"><span>Interest added during moratorium</span><b id="e-mi"></b></div><div class="kv"><span>Principal when EMIs start</span><b id="e-prin"></b></div><div class="kv"><span>Total interest paid</span><b id="e-int"></b></div><div class="kv"><span>Total repaid</span><b id="e-tot"></b></div>
+<p style="font-size:.85rem;color:var(--mute);margin-top:12px" id="e-80e"></p>
+<p style="font-size:.85rem;color:var(--mute)">Tip: paying just the interest during your course can save lakhs. Read the <a href="{{ b }}/guides/education-loans.html">education loan guide</a>.</p></div>
+</div>
+
+<div class="tool card" id="t-cgpa">
+<div><h2 style="font-size:1.5rem">CGPA to percentage converter</h2><p style="color:var(--ink2)">Universities use different formulas. Use your own university’s formula when it publishes one.</p>
+<div class="row"><div class="field"><label for="g-cgpa">Your CGPA</label><input id="g-cgpa" type="number" value="8.2" step="0.01" min="0"></div>
+<div class="field"><label for="g-scale">Scale out of</label><select id="g-scale"><option value="10">10</option><option value="4">4</option><option value="5">5</option></select></div></div>
+<div class="field"><label for="g-formula">Formula</label><select id="g-formula"><option value="cbse">CBSE (CGPA × 9.5)</option><option value="linear">Linear (CGPA ÷ scale × 100)</option><option value="mu">Mumbai University (7.1 × CGPA + 11)</option><option value="aktu">AKTU ((CGPA − 0.75) × 10)</option></select></div></div>
+<div class="out"><span style="font-size:.9rem;color:var(--mute)">Equivalent percentage</span><div class="big" id="g-out">—</div><div class="bar"><i id="g-bar"></i></div>
+<div class="kv"><span>Division (typical)</span><b id="g-div"></b></div><div class="kv"><span>Rough 4.0-scale estimate</span><b id="g-us"></b></div>
+<p style="font-size:.85rem;color:var(--mute);margin-top:12px">For applications abroad, universities may re-evaluate your transcript; WES-style evaluations can differ from this estimate.</p></div>
+</div>
+
+<div class="tool card" id="t-plan">
+<div><h2 style="font-size:1.5rem">Backward deadline planner</h2><p style="color:var(--ink2)">Enter the official deadline. We work backwards so every task has a date.</p>
+<div class="field"><label for="p-date">Application deadline</label><input id="p-date" type="date"></div>
+<div class="field"><label for="p-type">Type of application</label><select id="p-type"><option value="domestic">Government / domestic scholarship</option><option value="abroad">International scholarship or university</option></select></div>
+<p class="big" id="p-days" style="font-size:1.8rem"></p>
+<button class="btn btn-ghost btn-sm" type="button" onclick="window.print()">Print my plan</button></div>
+<div class="out"><ul class="timeline" id="p-out"></ul></div>
+</div>
+
+<div class="tool card" id="t-ready">
+<div><h2 style="font-size:1.5rem">Application readiness check</h2><p style="color:var(--ink2)">Tick what you already have. Progress is saved on this device only.</p>
+<label class="check field"><input type="checkbox" id="r1"> <span>Mark sheets / transcripts for every year</span></label>
+<label class="check field"><input type="checkbox" id="r2"> <span>Income certificate (family)</span></label>
+<label class="check field"><input type="checkbox" id="r3"> <span>Domicile / residence and category certificate (if applicable)</span></label>
+<label class="check field"><input type="checkbox" id="r4"> <span>ID document and bank account linked to it</span></label>
+<label class="check field"><input type="checkbox" id="r5"> <span>Bonafide / enrolment certificate from institute</span></label>
+<label class="check field"><input type="checkbox" id="r6"> <span>Passport-size photo and signature scans</span></label>
+<label class="check field"><input type="checkbox" id="r7"> <span>CV / résumé (1–2 pages)</span></label>
+<label class="check field"><input type="checkbox" id="r8"> <span>Personal statement or essay draft</span></label>
+<label class="check field"><input type="checkbox" id="r9"> <span>2 referees confirmed</span></label>
+<label class="check field"><input type="checkbox" id="r10"> <span>English test score (if studying abroad)</span></label></div>
+<div class="out"><span style="font-size:.9rem;color:var(--mute)">You are</span><div class="big" id="r-out">0%</div><div class="bar"><i id="r-bar"></i></div><p id="r-msg"></p>
+<a class="btn btn-gold btn-sm" href="{{ b }}/scholarships.html">Find where to apply</a></div>
+</div>
+</div></section>
+<section class="section-alt"><div class="wrap article">
+<h2>Why these tools matter</h2>
+<p>Most funding mistakes are arithmetic mistakes. Students compare countries on tuition alone and forget that living costs in London or New York can exceed tuition; they sign education loans looking only at the EMI and miss the interest that quietly compounds during a two-year course; they convert CGPA with the wrong formula and under-report their marks. These calculators make those numbers visible in seconds so that your decisions — which country, how much to borrow, which deadlines to chase first — rest on the right figures.</p>
+<p>All calculations run locally in your browser. We do not store or transmit what you type into the tools. If you want a human to review your plan, use the <a href="{{ b }}/match.html">free personal match</a>.</p>
+</div></section>
