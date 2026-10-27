@@ -7,15 +7,15 @@ Free scholarship finder (35+ programmes across India, Pakistan and fully funded 
 - **Forms:** all submit by AJAX to a form-forwarding service; the destination inbox is encoded in `main.js` and never appears in plain text. The **first submission triggers a one-time activation email** to the inbox — click it once and every form is live.
 - **Lead engine:** `/match.html` (4 steps) tags each lead HOT / WARM / NURTURE and attaches UTM + first-landing data.
 
-## Live URL
-https://webworksa1.github.io/honhaar-com/
+## Live
+https://honhaar.com — GitHub Pages, deploy from `main` / root, custom domain via `CNAME`.
+DNS: A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `webworksa1.github.io`.
 
-## Move to honhaar.com (when ready)
-honhaar.com currently resolves to the registrar's servers, so it is not set as the Pages domain yet (that would redirect the live site to a parked page).
-1. DNS: A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; CNAME `www` → `webworksa1.github.io`.
-2. In `_config.yml` set `url: "https://honhaar.com"` and `baseurl: ""`; add a `CNAME` file containing `honhaar.com`.
-3. Settings → Pages → custom domain `honhaar.com` → **Enforce HTTPS**.
-4. Apply for AdSense on honhaar.com (ads.txt is then served at the domain root) and submit `/sitemap.xml` in Google Search Console.
+## Launch checklist
+1. Settings → Pages → tick **Enforce HTTPS** once the certificate is issued.
+2. Submit one test form and click the one-time activation email in the inbox.
+3. Apply for AdSense on honhaar.com (ads.txt is served at the domain root).
+4. Submit `https://honhaar.com/sitemap.xml` in Google Search Console.
 
 See `BUILD-PROMPTS.md` (phase-wise build prompts) and `RESEARCH.md` (concept, revenue model, 35-site benchmark).
 

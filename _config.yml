@@ -2,10 +2,9 @@
 title: Honhaar
 tagline: Scholarships, contests and careers for promising students
 description: Free scholarship finder, deadline tracker, study-abroad and education-loan calculators, guides, videos and monthly talent contests for promising students.
-# Live now at https://webworksa1.github.io/honhaar-com
-# When honhaar.com DNS points to GitHub Pages: set url to "https://honhaar.com", baseurl to "", and add a CNAME file containing honhaar.com
-url: "https://webworksa1.github.io"
-baseurl: "/honhaar-com"
+# Served on the custom domain via GitHub Pages (CNAME = honhaar.com)
+url: "https://honhaar.com"
+baseurl: ""
 lang: en
 markdown: kramdown
 exclude:
