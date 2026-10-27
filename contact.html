@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Contact Honhaar | Honhaar"
+description: "Contact Honhaar about listings, corrections, partnerships, sponsorship, advertising or general questions."
+---
+{%- assign b = site.baseurl -%}
+<section class="page-hero"><div class="wrap grid g2" style="align-items:start;gap:40px">
+<div><span class="eyebrow">Contact</span><h1>We read every message</h1>
+<p class="lead">Questions, corrections, scholarship tips or partnership ideas — send them here. We usually reply within two business days.</p>
+<div class="card" style="margin-top:20px"><h3>Quick routes</h3>
+<ul class="kicker-list"><li>Need scholarship options? <a href="{{ b }}/match.html">Get a free match</a></li><li>Want to sponsor or advertise? <a href="{{ b }}/partners.html">Partner with us</a></li><li>Interested in this website / domain? <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></li><li>Prefer email? <a href="#" data-mail="Inquiry from Honhaar.com">Email us</a></li></ul></div>
+<p class="notice">Honhaar does not process applications for any scholarship. For a specific programme, contact its official provider.</p></div>
+<div class="form-card"><form class="js-form" data-subject="Contact form" data-ok="Message sent — thank you. We’ll reply soon.">
+<div class="row"><div class="field"><label for="ct-name">Name</label><input id="ct-name" name="name" required></div><div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required></div></div>
+<div class="field"><label for="ct-topic">Topic</label><select id="ct-topic" name="topic"><option>General question</option><option>Correction to a listing</option><option>Suggest a scholarship</option><option>Contest</option><option>Partnership / sponsorship</option><option>Advertising</option><option>Website / domain enquiry</option><option>Privacy request</option></select></div>
+<div class="field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required></textarea></div>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="field"><label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree to the <a href="{{ b }}/privacy.html">Privacy Policy</a>.</span></label></div>
+<button class="btn btn-gold btn-block" type="submit">Send message</button><div class="form-msg" role="status"></div></form></div>
+</div></section>
