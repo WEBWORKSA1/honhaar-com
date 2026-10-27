@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /site.webmanifest
+---
+{"name":"Honhaar — Scholarships, Contests & Careers","short_name":"Honhaar","start_url":"{{ site.baseurl }}/index.html","display":"standalone","background_color":"#fbf7ef","theme_color":"#0e5e57","icons":[{"src":"{{ site.baseurl }}/assets/img/favicon.svg","sizes":"any","type":"image/svg+xml"}]}

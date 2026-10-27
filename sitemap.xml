@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.html_pages -%}
+{%- unless p.robots contains 'noindex' %}
+<url><loc>{{ site.url }}{{ site.baseurl }}{{ p.url | replace: 'index.html', '' }}</loc><lastmod>2026-10-27</lastmod><changefreq>{% if p.url contains 'scholarships' or p.url == '/' %}weekly{% else %}monthly{% endif %}</changefreq><priority>{% if p.url == '/' %}1.0{% elsif p.url contains 'guides/' %}0.8{% else %}0.7{% endif %}</priority></url>
+{%- endunless -%}
+{%- endfor %}
+</urlset>

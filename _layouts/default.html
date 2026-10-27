@@ -1,0 +1,74 @@
+<!doctype html>
+{%- assign b = site.baseurl -%}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ site.url }}{{ b }}{{ page.url | replace: 'index.html', '' }}">
+<meta name="robots" content="{{ page.robots | default: 'index,follow,max-image-preview:large' }}">
+<meta name="theme-color" content="#0e5e57">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Honhaar">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ site.url }}{{ b }}{{ page.url | replace: 'index.html', '' }}">
+<meta property="og:image" content="{{ site.url }}{{ b }}/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ b }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="{{ b }}/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ b }}/assets/css/style.css">
+<script>window.HB="{{ b }}";try{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+{%- if page.schema %}
+<script type="application/ld+json">{{ page.schema }}</script>
+{%- endif %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Honhaar","url":"{{ site.url }}{{ b }}/","potentialAction":{"@type":"SearchAction","target":"{{ site.url }}{{ b }}/scholarships.html?q={query}","query-input":"required name=query"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note">Contact, if you are interested in this website/domain name/Sponsorship/Advertisement/Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site"><div class="wrap nav">
+<a class="logo" href="{{ b }}/index.html" aria-label="Honhaar home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="var(--teal)"/><path d="M20 7l3.4 8.3 8.9.7-6.8 5.8 2.1 8.7L20 25.8l-7.6 4.7 2.1-8.7-6.8-5.8 8.9-.7z" fill="var(--gold)"/></svg><span>Honhaar</span></a>
+<nav aria-label="Main"><ul class="menu" id="menu">
+<li><a href="{{ b }}/scholarships.html">Scholarships</a></li>
+<li><a href="{{ b }}/tools.html">Tools</a></li>
+<li><a href="{{ b }}/guides/index.html">Guides</a></li>
+<li><a href="{{ b }}/videos.html">Videos</a></li>
+<li><a href="{{ b }}/contests.html">Contests</a></li>
+<li><a href="{{ b }}/careers.html">Join Us</a></li>
+<li><a href="{{ b }}/support.html">Support</a></li>
+<li class="m-only"><a href="{{ b }}/match.html">Free Match</a></li>
+</ul></nav>
+<div class="nav-cta"><a class="btn btn-gold btn-sm hide-s" href="{{ b }}/match.html">Get My Free Match</a>
+<button class="icon-btn" id="themeBtn" aria-label="Toggle light or dark theme">◐</button>
+<button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site"><div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand"><a class="logo" href="{{ b }}/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="var(--teal)"/><path d="M20 7l3.4 8.3 8.9.7-6.8 5.8 2.1 8.7L20 25.8l-7.6 4.7 2.1-8.7-6.8-5.8 8.9-.7z" fill="var(--gold)"/></svg><span>Honhaar</span></a>
+<p>Free scholarships, deadlines, tools and contests for promising students — so talent, not money, decides who gets ahead.</p>
+<form class="js-form inline-form" data-subject="Deadline Alerts signup" data-ok="You're in. Deadline Alerts arrive every Monday.">
+<input type="email" name="email" required placeholder="your@email.com" aria-label="Email for weekly deadline alerts"><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="list" value="Weekly Deadline Alerts"><button class="btn btn-gold btn-sm" type="submit">Get alerts</button><div class="form-msg" role="status"></div></form></div>
+<div><h4>Find</h4><ul><li><a href="{{ b }}/scholarships.html">Scholarship Finder</a></li><li><a href="{{ b }}/match.html">Free Match</a></li><li><a href="{{ b }}/tools.html">Calculators</a></li><li><a href="{{ b }}/guides/index.html">Guides</a></li><li><a href="{{ b }}/videos.html">Videos</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="{{ b }}/contests.html">Talent Contests</a></li><li><a href="{{ b }}/careers.html">Careers &amp; Mentors</a></li><li><a href="{{ b }}/support.html">Donate</a></li><li><a href="{{ b }}/partners.html">Partner &amp; Advertise</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="{{ b }}/about.html">About</a></li><li><a href="{{ b }}/contact.html">Contact</a></li><li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy / Sponsor this site</a></li></ul></div>
+<div><h4>Legal</h4><ul><li><a href="{{ b }}/privacy.html">Privacy</a></li><li><a href="{{ b }}/terms.html">Terms</a></li><li><a href="{{ b }}/disclaimer.html">Disclaimer</a></li><li><a href="{{ b }}/cookies.html">Cookies</a></li><li><a href="{{ b }}/trademark.html">Trademark &amp; Copyright</a></li></ul></div>
+</div>
+<div class="legal">
+<p><b>Trademark &amp; copyright disclosure:</b> “Honhaar” is a common Hindi–Urdu word meaning promising or talented, used here only as a descriptive name and domain identifier. This site is independent and is not affiliated with, endorsed by or operated for any government, scholarship programme, university, company or person that uses the word “Honhaar” — including the Government of Punjab (Pakistan) Honhaar Scholarship Programme. We never take applications for, or charge fees for, any third-party scholarship. All third-party names and marks belong to their owners and are used for identification only. <a href="{{ b }}/trademark.html">Full disclosure</a>.</p>
+<p>Scholarship details change often — always confirm on the official website before applying. Some pages show advertising served by Google AdSense. © <span class="year">2026</span> Honhaar.com. Original text, data compilation, tools and design © Honhaar.com.</p>
+</div></div></footer>
+<div class="mcta"><a class="btn btn-ghost" href="{{ b }}/scholarships.html">Find Scholarships</a><a class="btn btn-gold" href="{{ b }}/match.html">Free Match</a></div>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie notice"><p>We use essential storage and, with your consent, cookies from Google to show and measure ads. See our <a href="{{ b }}/cookies.html">Cookie Policy</a>.</p>
+<div class="acts"><button class="btn btn-gold btn-sm" data-cookie="all">Accept</button><button class="btn btn-ghost btn-sm" data-cookie="essential">Essential only</button></div></div>
+<script src="{{ b }}/assets/js/data.js" defer></script>
+<script src="{{ b }}/assets/js/main.js" defer></script>
+</body></html>
