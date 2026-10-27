@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Support Honhaar — Donate to Keep Scholarships Free | Honhaar"
+description: "Donate once or monthly to keep Honhaar free for students. Your support funds contest prizes, scholarship research, outreach, hiring and hosting."
+---
+{%- assign b = site.baseurl -%}
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Support Honhaar</span><h1>Keep opportunity free for the next student</h1>
+<p class="lead">Every listing is researched by people, every prize is paid by supporters, and every page stays free for students. Your contribution decides how far we reach.</p></div></section>
+<section style="padding-top:0"><div class="wrap grid g2" style="align-items:start;gap:40px">
+<div>
+<h2>Where your support goes</h2>
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><div class="ico">🏆</div><h3>Prizes</h3><p>Monthly contest prizes and certificates.</p></div>
+<div class="card"><div class="ico">🔎</div><h3>Research</h3><p>Checking and updating every scholarship listing.</p></div>
+<div class="card"><div class="ico">📣</div><h3>Outreach &amp; promotion</h3><p>Reaching rural and first-generation students.</p></div>
+<div class="card"><div class="ico">🧑‍💻</div><h3>Hiring talent</h3><p>Paying student researchers, writers and designers.</p></div>
+<div class="card"><div class="ico">⚙️</div><h3>Operations</h3><p>Hosting, tools, email and security.</p></div>
+<div class="card"><div class="ico">🤝</div><h3>Mentorship</h3><p>Matching winners with volunteer mentors.</p></div>
+</div>
+<h2 style="margin-top:36px">Monthly circles</h2>
+<div class="grid g3" style="margin-top:16px">
+<div class="card tier"><h3>Friend</h3><div class="price">$5</div><ul><li>Name on supporters list</li><li>Monthly impact note</li></ul><button class="btn btn-ghost btn-sm" data-amt="$5" style="margin-top:12px">Choose</button></div>
+<div class="card tier featured"><h3>Champion</h3><div class="price">$15</div><ul><li>Everything in Friend</li><li>Funds one contest certificate set</li><li>Early theme reveals</li></ul><button class="btn btn-gold btn-sm" data-amt="$15" style="margin-top:12px">Choose</button></div>
+<div class="card tier"><h3>Patron</h3><div class="price">$50</div><ul><li>Everything in Champion</li><li>Name a monthly prize</li><li>Quarterly impact call</li></ul><button class="btn btn-ghost btn-sm" data-amt="$50" style="margin-top:12px">Choose</button></div>
+</div>
+<p class="notice">Prefer to give in INR or PKR? Choose “Other” and tell us your currency — we’ll send a local payment link.</p>
+</div>
+<div class="form-card" id="donate"><h2 style="font-size:1.5rem">Make a contribution</h2>
+<form class="js-form" data-subject="Donation pledge" data-ok="Thank you! A secure payment link will reach your inbox within 24 hours.">
+<label class="lbl2">Frequency</label><div class="choice-grid"><label class="choice"><input type="radio" name="frequency" value="One-time" required checked><span>One-time</span></label><label class="choice"><input type="radio" name="frequency" value="Monthly"><span>Monthly</span></label></div>
+<label class="lbl2">Amount</label><div class="choice-grid"><label class="choice"><input type="radio" name="amount" value="$5" required><span>$5</span></label><label class="choice"><input type="radio" name="amount" value="$15"><span>$15</span></label><label class="choice"><input type="radio" name="amount" value="$50"><span>$50</span></label><label class="choice"><input type="radio" name="amount" value="$100"><span>$100</span></label><label class="choice"><input type="radio" name="amount" value="Other"><span>Other</span></label></div>
+<div class="row"><div class="field"><label for="d-other">Other amount</label><input id="d-other" name="other_amount" type="number" min="1"></div><div class="field"><label for="d-cur">Currency</label><select id="d-cur" name="currency"><option>USD</option><option>INR</option><option>PKR</option><option>CAD</option><option>GBP</option><option>EUR</option><option>AED</option></select></div></div>
+<div class="field"><label for="d-purpose">Direct my support to</label><select id="d-purpose" name="purpose"><option>Wherever it’s needed most</option><option>Contest prizes</option><option>Scholarship research</option><option>Outreach &amp; promotion</option><option>Hiring student talent</option><option>Operations &amp; hosting</option></select></div>
+<div class="row"><div class="field"><label for="d-name">Name</label><input id="d-name" name="name" required></div><div class="field"><label for="d-email">Email</label><input id="d-email" name="email" type="email" required></div></div>
+<div class="field"><label for="d-msg">Message (optional, may be shown publicly)</label><input id="d-msg" name="message" maxlength="140"></div>
+<div class="field"><label class="check"><input type="checkbox" name="public" value="Show my name publicly"> <span>Show my name on the supporters list</span></label></div>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="field"><label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree to be contacted about my contribution and accept the <a href="{{ b }}/privacy.html">Privacy Policy</a>.</span></label></div>
+<button class="btn btn-gold btn-block" type="submit">Continue to secure payment</button><div class="form-msg" role="status"></div></form>
+<p class="notice">We send a payment link from a trusted payment provider. We never ask for card or bank details in a form. Honhaar is not a registered charity; contributions are not tax-deductible.</p></div>
+</div></section>
+<section class="section-alt"><div class="wrap"><div class="band"><div><h2>Giving as a company?</h2><p>Sponsor a contest month, fund a named scholarship or reach students with your brand.</p></div><div><a class="btn btn-gold btn-block" href="{{ b }}/partners.html">See partnership options</a></div></div></div></section>

@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Honhaar Talent Contest — Free Monthly Competitions with Prizes | Honhaar"
+description: "Enter free monthly talent contests in essay writing, art, coding, speech, photography and innovation. Win prizes, certificates and mentorship."
+---
+{%- assign b = site.baseurl -%}
+<section class="page-hero"><div class="wrap grid g2" style="align-items:center;gap:40px">
+<div><span class="eyebrow">Honhaar Talent Contest</span><h1>Every month, one theme. Your talent, judged fairly.</h1>
+<p class="lead">Free to enter for students aged 13–25. Original work only. Winners receive prizes, certificates, mentorship and a feature on Honhaar.</p>
+<p><b>This month’s theme:</b><br><span id="contestTheme" style="font-family:var(--fd);font-size:1.3rem;color:var(--teal)">—</span></p>
+<p style="margin-bottom:4px">Entries close <span id="contestDate"></span></p>
+<div class="countdown" id="contestCountdown">—</div>
+<div style="margin-top:20px"><a class="btn btn-gold" href="#enter">Submit my entry</a> <a class="btn btn-ghost" href="{{ b }}/partners.html#sponsor">Sponsor a prize</a></div></div>
+<div class="grid g2">
+<div class="card center"><div class="prize">1st</div><h3>Top prize</h3><p>Cash or voucher + certificate + mentor session</p></div>
+<div class="card center"><div class="prize">2nd</div><h3>Runner-up</h3><p>Voucher + certificate</p></div>
+<div class="card center"><div class="prize">3rd</div><h3>Third place</h3><p>Voucher + certificate</p></div>
+<div class="card center"><div class="prize">Top 10</div><h3>Finalists</h3><p>Certificate + featured on Honhaar</p></div>
+</div></div></section>
+<section class="section-alt"><div class="wrap">
+<h2>2026–27 contest calendar</h2>
+<div class="table-wrap"><table><thead><tr><th>Month</th><th>Category</th><th>Format</th></tr></thead><tbody>
+<tr><td>January</td><td>Essay</td><td>600–900 words</td></tr><tr><td>February</td><td>Art &amp; design</td><td>Image (JPG/PNG) + 100-word note</td></tr>
+<tr><td>March</td><td>Coding</td><td>Public repo or live link + 2-min demo video</td></tr><tr><td>April</td><td>Speech</td><td>2-minute video</td></tr>
+<tr><td>May</td><td>Photography</td><td>Up to 3 photos</td></tr><tr><td>June</td><td>Science explainer</td><td>90-second video or one-page explainer</td></tr>
+<tr><td>July</td><td>Short story</td><td>Up to 1,500 words</td></tr><tr><td>August</td><td>Innovation pitch</td><td>One-page pitch</td></tr>
+<tr><td>September</td><td>Poetry</td><td>Up to 40 lines, original</td></tr><tr><td>October</td><td>Data story</td><td>One chart + 300 words</td></tr>
+<tr><td>November</td><td>Debate</td><td>2-minute video, either side</td></tr><tr><td>December</td><td>Entrepreneurship</td><td>One-page report of a real 30-day project</td></tr>
+</tbody></table></div>
+<p style="font-size:.88rem;color:var(--mute)">Prize values for each month are announced on this page once sponsors confirm them. Prizes are never paid for by entrants.</p>
+</div></section>
+<section id="enter"><div class="wrap grid g2" style="align-items:start;gap:40px">
+<div><h2>How judging works</h2>
+<ul class="kicker-list">
+<li><b>Originality (35%)</b> — your own idea and voice</li>
+<li><b>Impact (25%)</b> — does it make the reader think, feel or act?</li>
+<li><b>Craft (25%)</b> — structure, clarity, technique</li>
+<li><b>Theme fit (15%)</b> — answers this month’s prompt</li>
+</ul>
+<h3 style="margin-top:28px">Rules in brief</h3>
+<ul style="color:var(--ink2)">
+<li>One entry per person per month. Free to enter — we will never ask you to pay.</li>
+<li>Work must be your own. AI-generated entries and plagiarism are disqualified.</li>
+<li>Entrants under 18 need a parent or guardian’s permission.</li>
+<li>Share your work as a link (Google Drive, YouTube unlisted, GitHub, etc.) set to “anyone with the link can view”.</li>
+<li>You keep copyright. You allow Honhaar to display winning entries with credit.</li>
+<li>Winners are announced in the first week of the following month and contacted by email.</li>
+</ul>
+<p>Full terms: <a href="{{ b }}/terms.html#contests">Contest terms</a>.</p></div>
+<div class="form-card"><h2 style="font-size:1.5rem">Submit your entry</h2>
+<form class="js-form" data-subject="Contest entry" data-ok="Entry received! We’ll email you when results are announced.">
+<div class="row"><div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" required></div><div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required></div></div>
+<div class="row"><div class="field"><label for="c-age">Age</label><input id="c-age" name="age" type="number" min="13" max="25" required></div><div class="field"><label for="c-country">Country</label><input id="c-country" name="country" required></div></div>
+<div class="field"><label for="c-inst">School / college</label><input id="c-inst" name="institution"></div>
+<div class="field"><label for="c-cat">Category</label><select id="c-cat" name="category" required><option value="">Choose…</option><option>Essay</option><option>Art &amp; design</option><option>Coding</option><option>Speech</option><option>Photography</option><option>Science explainer</option><option>Short story</option><option>Innovation pitch</option><option>Poetry</option><option>Data story</option><option>Debate</option><option>Entrepreneurship</option></select></div>
+<div class="field"><label for="c-title">Entry title</label><input id="c-title" name="entry_title" required></div>
+<div class="field"><label for="c-link">Link to your entry</label><input id="c-link" name="entry_link" type="url" placeholder="https://" required></div>
+<div class="field"><label for="c-note">About your entry (max 100 words)</label><textarea id="c-note" name="entry_note" maxlength="700"></textarea></div>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="field"><label class="check"><input type="checkbox" name="original" value="I confirm this is my original work" required> <span>This is my original work and I accept the contest terms.</span></label></div>
+<div class="field"><label class="check"><input type="checkbox" name="guardian" value="Guardian permission confirmed (if under 18)"> <span>If I am under 18, my parent/guardian has given permission.</span></label></div>
+<button class="btn btn-gold btn-block" type="submit">Submit entry</button><div class="form-msg" role="status"></div></form></div>
+</div></section>
+<section class="section-alt"><div class="wrap"><div class="band"><div><h2>Fund the next prize</h2><p>A ₹2,000 / Rs 5,000 voucher can be the first prize a student ever wins. Individuals can donate; companies can sponsor a whole month with their name on it.</p></div>
+<div><a class="btn btn-gold btn-block" href="{{ b }}/support.html">Donate to the prize pool</a><a class="btn btn-ghost btn-block" style="margin-top:10px;color:#fff;border-color:rgba(255,255,255,.4)" href="{{ b }}/partners.html#sponsor">Sponsor a month</a></div></div></div></section>
