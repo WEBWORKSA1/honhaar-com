@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Scholarship Finder — India, Pakistan & Fully Funded Study Abroad | Honhaar"
+description: "Search and filter 35+ government, private and international scholarships by country, level, funding and eligibility. Save favourites and see which windows close soon."
+---
+{%- assign b = site.baseurl -%}
+<section class="page-hero"><div class="wrap">
+<span class="eyebrow">Scholarship Finder</span>
+<h1>Find scholarships you can actually win</h1>
+<p class="lead">Government, private and international programmes for school, undergraduate, master's and PhD students. Every listing links to the official source — apply only there.</p>
+<div class="chips" style="margin-top:16px"><button class="chip" data-quick="funding=Full">Fully funded</button><button class="chip" data-quick="type=Women">For women</button><button class="chip" data-quick="type=Need">Need-based</button><button class="chip" data-quick="region=Abroad">Study abroad</button><button class="chip" data-quick="level=School">School students</button><button class="chip" data-quick="sort=deadline">Closing soonest</button></div>
+</div></section>
+<section style="padding-top:10px"><div class="wrap finder">
+<aside class="card filters" aria-label="Filters">
+<label class="lbl" for="fq" style="margin-top:0">Keyword</label><input id="fq" type="search" placeholder="e.g. engineering, UK, girls">
+<label class="lbl" for="fregion">Where you are / apply from</label>
+<select id="fregion"><option value="">All</option><option value="India">India</option><option value="Pakistan">Pakistan</option><option value="Global">Open internationally</option><option value="Abroad">Any study-abroad award</option></select>
+<label class="lbl" for="flevel">Level</label>
+<select id="flevel"><option value="">All levels</option><option value="School">School (Class 6–12)</option><option value="UG">Undergraduate / diploma</option><option value="PG">Master's</option><option value="PhD">PhD / research</option></select>
+<label class="lbl" for="ftype">Type</label>
+<select id="ftype"><option value="">All types</option><option value="Merit">Merit</option><option value="Need">Need-based</option><option value="Women">Women</option><option value="Disability">Disability</option><option value="Research">Research</option></select>
+<label class="lbl" for="ffund">Funding</label>
+<select id="ffund"><option value="">Any</option><option value="Full">Fully funded</option><option value="Partial">Partial / tuition / loan</option></select>
+<label class="lbl" for="fsort">Sort by</label>
+<select id="fsort"><option value="funding">Fully funded first</option><option value="deadline">Closing soonest</option><option value="az">A–Z</option></select>
+<label class="check" style="margin-top:16px"><input type="checkbox" id="fsaved"> <span>Show saved only (<span id="savedCount">0</span>)</span></label>
+<button class="btn btn-ghost btn-sm btn-block" id="fclear" type="button" style="margin-top:14px">Clear filters</button>
+<div class="callout" style="margin:18px 0 0;font-size:.9rem"><b>Not sure what fits?</b><br>Get a free personal match in 2 minutes.<br><a class="btn btn-gold btn-sm" href="{{ b }}/match.html" style="margin-top:10px">Get matched</a></div>
+</aside>
+<div>
+<div class="res-meta"><span id="resCount" aria-live="polite">Loading…</span><span>“Usually closes” = typical month from recent cycles</span></div>
+<div id="results"><noscript><p>Enable JavaScript to use the interactive finder, or browse our <a href="{{ b }}/guides/fully-funded-scholarships.html">fully funded scholarships guide</a>.</p></noscript></div>
+</div>
+</div></section>
+<section class="section-alt"><div class="wrap article">
+<h2>How to use this finder well</h2>
+<p>Most students search for scholarships once, find a handful of famous names and stop. Winners do the opposite: they build a <b>long list of 15–25 programmes</b>, cut it to the 6–10 where they clearly meet every eligibility line, then apply to all of them with a reusable set of documents. A single fully funded award can be worth more than a decade of part-time work, so the hours you invest here have the highest return of anything you will do this year.</p>
+<h3>Read eligibility like a selector</h3>
+<p>Before you fall in love with a scholarship, check four things on the official page: citizenship or domicile, the level and subject you must be enrolled in, any income ceiling, and minimum marks. If you fail even one “must”, move on — selectors rarely make exceptions, and a rejected application costs you time you could spend on a programme you can win.</p>
+<h3>Domestic first, then international</h3>
+<p>Government schemes in India and Pakistan reach far more students than any international award, but they reward the organised: correct certificates, bank accounts linked to your ID, and verification by your institute before the cut-off. International awards like Chevening, Commonwealth or MEXT are fewer and more competitive; they reward a clear story, leadership evidence and strong references. Apply to both kinds in parallel.</p>
+<h3>Never pay to apply</h3>
+<p>Legitimate scholarships do not charge an application fee to “unlock” money, and no agent can guarantee selection. Read our guide on <a href="{{ b }}/guides/scholarship-scams.html">spotting scholarship scams</a> before you share documents with anyone.</p>
+</div></section>
